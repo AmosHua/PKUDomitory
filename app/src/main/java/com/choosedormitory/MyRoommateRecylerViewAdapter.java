@@ -1,16 +1,13 @@
 package com.choosedormitory;
 
 import android.content.Context;
-import android.service.chooser.ChooserTargetService;
 import android.support.v7.widget.RecyclerView;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
-import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -24,7 +21,7 @@ import java.util.List;
  */
 public class MyRoommateRecylerViewAdapter extends RecyclerSwipeAdapter<MyRoommateRecylerViewAdapter.MyViewHolder> {
     private Context context;
-    private ChooseActivity.romove romove;
+    private SelectActivity.romove romove;
     public List<Roommate> getData(){
         return list;
     }
@@ -106,7 +103,7 @@ public class MyRoommateRecylerViewAdapter extends RecyclerSwipeAdapter<MyRoommat
         return position;
     }
 
-    public void setCallBack(ChooseActivity.romove callBack) {
+    public void setCallBack(SelectActivity.romove callBack) {
         this.romove = callBack;
     }
 

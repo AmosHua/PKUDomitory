@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
 
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.choosedormitory.DetailActivity">
+    tools:context="com.choosedormitory.InfoActivity">
     <LinearLayout
         android:id="@+id/choose_content"
         android:layout_width="match_parent"
@@ -111,6 +111,38 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:gravity="center_vertical"
+            android:layout_height="50dp"
+            android:background="#ffffff">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_centerVertical="true"
+                android:text="校区"
+                android:textColor="#000080"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingRight="14dp"
+                android:layout_centerVertical="true"
+                android:text="大兴"
+                android:textColor="#a1a0a0"
+                android:textSize="20dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:background="#c2c0c0">
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
 
             android:layout_height="50dp"
             android:background="#ffffff">
@@ -123,6 +155,7 @@
                 android:textColor="#000080"
                 android:textSize="20dp"
                 />
+
             <TextView
                 android:id="@+id/captcha"
                 android:layout_width="wrap_content"
@@ -140,12 +173,11 @@
             android:gravity="center"
             android:layout_marginTop="5dp"
             android:text="开放时间：
-男生：2017-8-30 15：00：00 ～2017-9-1 12：00：00
-女生：2017-8-28 14：00：00 ～2017-9-1 12：00：00
-说明：
-1.办理多人住宿时需要提供校验码，请勿透露给非
-同住人！
-2.本系统仅限大兴校区新生使用
+     男生：2017-8-30 15：00：00 ～2017-9-1 12：00：00
+     女生：2017-8-28 14：00：00 ～2017-9-1 12：00：00
+     说明：
+     1.办理多人住宿时需要提供校验码，请勿透露给非同住人！
+     2.本系统仅限大兴校区新生使用
 "/>
         <com.dd.CircularProgressButton
             android:id="@+id/btn"

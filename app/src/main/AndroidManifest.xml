@@ -27,10 +27,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".DetailActivity"
+            android:name=".InfoActivity"
             android:label="@string/title_activity_choose" />
         <activity android:name=".FinishActivity" />
-        <activity android:name=".ChooseActivity"></activity>
+        <activity android:name=".SelectActivity"></activity>
     </application>
 
 </manifest>
